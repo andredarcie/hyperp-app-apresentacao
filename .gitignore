@@ -17,3 +17,8 @@ nbdist/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+04-implementacao/hyperp_app_apresentacao/nbproject/private/
+04-implementacao/hyperp_app_apresentacao/build/
+04-implementacao/hyperp_app_apresentacao/nbbuild/
+04-implementacao/hyperp_app_apresentacao/dist/
+04-implementacao/hyperp_app_apresentacao/nbdist/
