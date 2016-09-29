@@ -6,6 +6,9 @@
 ### Build Status no Travis-CI ###
 [![Build Status](https://travis-ci.org/AndreNDarcie/hyperp-app-apresentacao.svg?branch=master)](https://travis-ci.org/AndreNDarcie/hyperp-app-apresentacao)
 
+### Code coverage no Codecov ###
+[![codecov](https://codecov.io/gh/AndreNDarcie/hyperp-app-apresentacao/branch/master/graph/badge.svg)](https://codecov.io/gh/AndreNDarcie/hyperp-app-apresentacao)
+
 ### Sobre o projeto - Apresentação ###
 
 * HyperP app Apresentação faz parte do Hyper P, plataforma de apresentação de áudio, vídeos, textos e imagens com
