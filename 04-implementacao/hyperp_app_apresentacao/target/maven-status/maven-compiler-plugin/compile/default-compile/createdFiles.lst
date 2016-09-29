@@ -1,0 +1,17 @@
+com\hypersoft\visao\ui\View.class
+com\hypersoft\visao\ui\View$1.class
+servico\TrataApresentador.class
+servico\Servidor$1.class
+servico\Quiz.class
+servico\TrataEspectador.class
+controle\Controlador$1.class
+com\hypersoft\hyperp_app_apresentacao\MainApp.class
+com\hypersoft\visao\ui\View$2.class
+com\hypersoft\hyperp_app_apresentacao\FXMLController.class
+persistencia\Log.class
+com\hypersoft\visao\ui\View$4.class
+dominio\NoMidia.class
+com\hypersoft\visao\ui\View$3.class
+servico\Servidor.class
+com\hypersoft\visao\ui\View$5.class
+controle\Controlador.class
