@@ -108,4 +108,8 @@ public class Servidor {
         //}
             
     }
+    
+    public int testar(int a, int b){
+        return a + b;
+    }
 }
