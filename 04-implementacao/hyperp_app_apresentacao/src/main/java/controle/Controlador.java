@@ -38,7 +38,11 @@ public class Controlador {
     private static String urlPadrao = "file:///C:/SMH/";
     
     private static boolean leituraArquivo = false;
-
+    
+    public static void setMidiaPrincipalAtual(int i){
+        midiaPrincipalAtual = i;
+    }
+    
     // Carrega todos os recursos necessarios para a apresentação
     public static void carregarMidias() {
 

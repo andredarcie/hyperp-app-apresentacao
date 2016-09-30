@@ -5,8 +5,15 @@
  */
 package controle;
 
+import com.hypersoft.visao.ui.View;
+import dominio.NoMidia;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.application.Application;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,6 +24,37 @@ import static org.junit.Assert.*;
 public class ControladorTest {
     
     public ControladorTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+            
+        // Initialise Java FX
+
+        System.out.printf("About to launch FX App\n");
+        Thread t;
+        t = new Thread("JavaFX Init Thread") {
+            @Override
+            public void run() {
+                Application.launch(View.class, new String[0]);
+            }
+        };
+        t.setDaemon(true);
+        t.start();
+        System.out.printf("FX App thread started\n");
+        
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(ControladorTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        Controlador.setMidiaPrincipalAtual(3);
+        
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
     }
     
     @Before
@@ -32,6 +70,8 @@ public class ControladorTest {
      */
     @Test
     public void testCarregarMidias() {
+        System.out.println("carregarMidias");
+        Controlador.carregarMidias();
     }
 
     /**
@@ -39,6 +79,8 @@ public class ControladorTest {
      */
     @Test
     public void testAvancarIndice() {
+        System.out.println("avancarIndice");
+        Controlador.avancarIndice();
     }
 
     /**
@@ -46,6 +88,8 @@ public class ControladorTest {
      */
     @Test
     public void testRetrocederIndice() {
+        System.out.println("retrocederIndice");
+        Controlador.retrocederIndice();
     }
 
     /**
@@ -53,6 +97,11 @@ public class ControladorTest {
      */
     @Test
     public void testGetNoAtual() {
+        System.out.println("getNoAtual");
+        NoMidia expResult = null;
+        Controlador.carregarMidias();
+        NoMidia result = Controlador.getNoAtual();
+        assertNotEquals(expResult, result);
     }
 
     /**
@@ -60,6 +109,8 @@ public class ControladorTest {
      */
     @Test
     public void testPlay() {
+        System.out.println("play");
+        Controlador.play();
     }
 
     /**
@@ -67,6 +118,8 @@ public class ControladorTest {
      */
     @Test
     public void testPause() {
+        System.out.println("pause");
+        Controlador.pause();
     }
 
     /**
@@ -74,6 +127,8 @@ public class ControladorTest {
      */
     @Test
     public void testProximo() {
+        System.out.println("proximo");
+        Controlador.proximo();
     }
 
     /**
@@ -81,6 +136,8 @@ public class ControladorTest {
      */
     @Test
     public void testAnterior() {
+        System.out.println("anterior");
+        Controlador.anterior();
     }
     
 }
