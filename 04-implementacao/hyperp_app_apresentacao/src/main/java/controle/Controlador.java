@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import servico.Quiz;
 import com.hypersoft.visao.ui.View;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -72,31 +74,46 @@ public class Controlador {
             }
         
         } else {
-            // Adiciona os recursos em uma lista
+            
+                // Adiciona os recursos em uma lista
+                /*
+                playListPrincipal = new ArrayList() {
+                {
+                add(new NoMidia(urlPadrao + "img/fun_aguardando.png", "img", "Inicio"));
+                add(new NoMidia(urlPadrao + "img/fun_selecao.png", "img", "Disciplina"));
+                add(new NoMidia(urlPadrao + "Aula_1.mp4", "video", "Aula 1 - Introdução "));
+                add(new NoMidia(urlPadrao + "img/office.png", "quiz", "Quiz"));
+                add(new NoMidia(urlPadrao + "Aula_2.mp4", "video", "Aula 2 - Continuação"));
+                add(new NoMidia(urlPadrao + "img/atalhos-1.png", "img", "Aula 1 - Atalhos parte 1 "));
+                add(new NoMidia(urlPadrao + "img/atalhos-2.png", "img", "Aula 1 - Atalhos parte 2 "));
+                add(new NoMidia(urlPadrao + "img/barra.png", "quiz", "Quiz"));
+                add(new NoMidia(urlPadrao + "img/controle-alteracoes.png", "img", "Aula 1 - Alterações "));
+                add(new NoMidia(urlPadrao + "img/imprimir.png", "img", "Aula 2 - Imprimir "));
+                add(new NoMidia(urlPadrao + "extras/gerador-de-texto.mp4", "extras", "Conteúdo Extra - Gerador de Texto "));
+                add(new NoMidia(urlPadrao + "extras/aumentar-e-diminuir-texto.mp4", "extras", "Conteúdo Extra - Aumentar e Diminuir Texto "));
+                add(new NoMidia(urlPadrao + "extras/limpar-formatacao.mp4", "extras", "Conteúdo Extra - Limpar Formatacao "));
+                add(new NoMidia(urlPadrao + "extras/deletar-palavra.mp4", "extras", "Conteúdo Extra - Deletar Palavra "));
+                add(new NoMidia(urlPadrao + "extras/crtl-c.mp4", "extras", "Conteúdo Extra - Crtl+C "));
+                add(new NoMidia(urlPadrao + "extras/copyrigth.mp4", "extras", "Conteúdo Extra - Copyrigth "));
+                add(new NoMidia(urlPadrao + "img/conteudo.png", "quiz", "Quiz"));
+                add(new NoMidia(urlPadrao + "extras/tabela.mp4", "extras", "Conteúdo Extra - Tabela "));
+                add(new NoMidia(urlPadrao + "extras/formulas.mp4", "extras", "Conteúdo Extra - Formulas "));
+                add(new NoMidia(urlPadrao + "extras/pesquisa-web.mp4", "extras", "Conteúdo Extra - Pesquisa Web "));
+                add(new NoMidia(urlPadrao + "extras/traducao.mp4", "extras", "Conteúdo Extra - Traducao "));
+                add(new NoMidia(urlPadrao + "img/fun_finalizado.png", "img", "Fim"));
+                }
+                };
+                */
+                
             playListPrincipal = new ArrayList() {
                 {
-                    add(new NoMidia(urlPadrao + "img/fun_aguardando.png", "img", "Inicio"));
-                    add(new NoMidia(urlPadrao + "img/fun_selecao.png", "img", "Disciplina"));
-                    add(new NoMidia(urlPadrao + "Aula_1.mp4", "video", "Aula 1 - Introdução "));
-                    add(new NoMidia(urlPadrao + "img/office.png", "quiz", "Quiz"));
-                    add(new NoMidia(urlPadrao + "Aula_2.mp4", "video", "Aula 2 - Continuação"));
-                    add(new NoMidia(urlPadrao + "img/atalhos-1.png", "img", "Aula 1 - Atalhos parte 1 "));
-                    add(new NoMidia(urlPadrao + "img/atalhos-2.png", "img", "Aula 1 - Atalhos parte 2 "));
-                    add(new NoMidia(urlPadrao + "img/barra.png", "quiz", "Quiz"));
-                    add(new NoMidia(urlPadrao + "img/controle-alteracoes.png", "img", "Aula 1 - Alterações "));
-                    add(new NoMidia(urlPadrao + "img/imprimir.png", "img", "Aula 2 - Imprimir "));
-                    add(new NoMidia(urlPadrao + "extras/gerador-de-texto.mp4", "extras", "Conteúdo Extra - Gerador de Texto "));
-                    add(new NoMidia(urlPadrao + "extras/aumentar-e-diminuir-texto.mp4", "extras", "Conteúdo Extra - Aumentar e Diminuir Texto "));
-                    add(new NoMidia(urlPadrao + "extras/limpar-formatacao.mp4", "extras", "Conteúdo Extra - Limpar Formatacao "));
-                    add(new NoMidia(urlPadrao + "extras/deletar-palavra.mp4", "extras", "Conteúdo Extra - Deletar Palavra "));
-                    add(new NoMidia(urlPadrao + "extras/crtl-c.mp4", "extras", "Conteúdo Extra - Crtl+C "));
-                    add(new NoMidia(urlPadrao + "extras/copyrigth.mp4", "extras", "Conteúdo Extra - Copyrigth "));
-                    add(new NoMidia(urlPadrao + "img/conteudo.png", "quiz", "Quiz"));
-                    add(new NoMidia(urlPadrao + "extras/tabela.mp4", "extras", "Conteúdo Extra - Tabela "));
-                    add(new NoMidia(urlPadrao + "extras/formulas.mp4", "extras", "Conteúdo Extra - Formulas "));
-                    add(new NoMidia(urlPadrao + "extras/pesquisa-web.mp4", "extras", "Conteúdo Extra - Pesquisa Web "));
-                    add(new NoMidia(urlPadrao + "extras/traducao.mp4", "extras", "Conteúdo Extra - Traducao "));
-                    add(new NoMidia(urlPadrao + "img/fun_finalizado.png", "img", "Fim"));
+                    add(new NoMidia("file:///../src/main/resources/img/img/fun_aguardando.png", "img", "Inicio"));
+                    add(new NoMidia("file:///../src/main/resources/img/img/fun_selecao.png", "img", "Disciplina"));
+                    add(new NoMidia(new File("gerador-de-texto.mp4").toURI().toString(), "extras", "Conteúdo Extra - Gerador de Texto "));
+                    add(new NoMidia("file:///../src/main/resources/img/img/conteudo.png", "quiz", "Disciplina"));
+                    add(new NoMidia(new File("aumentar-e-diminuir-texto.mp4").toURI().toString(), "extras", "Conteúdo Extra - Gerador de Texto "));
+                    add(new NoMidia("file:///../src/main/resources/img/img/barra.png", "quiz", "Disciplina"));
+                    add(new NoMidia("file:///../src/main/resources/img/img/fun_finalizado.png", "img", "Disciplina"));  
                 }
             };
         }

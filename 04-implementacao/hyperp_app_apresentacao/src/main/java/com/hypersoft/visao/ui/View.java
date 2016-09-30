@@ -6,6 +6,7 @@
 package com.hypersoft.visao.ui;
 
 import controle.Controlador;
+import java.io.File;
 import persistencia.Log;
 import servico.Servidor;
 import javafx.scene.image.Image;
@@ -35,7 +36,7 @@ import javafx.stage.WindowEvent;
  */
 public class View extends Application {
 
-    public static MediaPlayer mediaPlayer = new MediaPlayer(new Media("file:///C:/SMH/Aula_1.mp4"));
+    public static MediaPlayer mediaPlayer = new MediaPlayer(new Media(new File("gerador-de-texto.mp4").toURI().toString()));
     public static MediaView mediaView = new MediaView();
     public static ImageView imageView = new ImageView();
     public static Pane root;
@@ -80,7 +81,7 @@ public class View extends Application {
         vbox.setLayoutY(screenHeight);
 
         // Botão de play
-        ImageView imgView1 = new ImageView(new Image("file:///C:/SMH/icons/play.png"));
+        ImageView imgView1 = new ImageView(new Image("file:///../src/main/resources/img/icons/play.png"));
         imgView1.setFitHeight(10);
         imgView1.setFitWidth(10);
         btnPlay = new Button("", imgView1);
@@ -97,7 +98,7 @@ public class View extends Application {
         btnPlay.setLayoutY(screenHeight);
 
         // Botão de pause
-        ImageView imgView2 = new ImageView(new Image("file:///C:/SMH/icons/pause.png"));
+        ImageView imgView2 = new ImageView(new Image("file:///../src/main/resources/img/icons/pause.png"));
         imgView2.setFitHeight(10);
         imgView2.setFitWidth(10);
         btnPause = new Button("", imgView2);
@@ -114,7 +115,7 @@ public class View extends Application {
         btnPause.setLayoutY(screenHeight);
 
         // Botão de proximo
-        ImageView imgView3 = new ImageView(new Image("file:///C:/SMH/icons/next.png"));
+        ImageView imgView3 = new ImageView(new Image("file:///../src/main/resources/img/icons/next.png"));
         imgView3.setFitHeight(10);
         imgView3.setFitWidth(10);
         Button btnProx = new Button("", imgView3);
@@ -131,7 +132,7 @@ public class View extends Application {
         btnProx.setLayoutY(screenHeight);
 
         // Botão de anterior
-        ImageView imgView4 = new ImageView(new Image("file:///C:/SMH/icons/back.png"));
+        ImageView imgView4 = new ImageView(new Image("file:///../src/main/resources/img/icons/back.png"));
         imgView4.setFitHeight(10);
         imgView4.setFitWidth(10);
         Button btnAnt = new Button("", imgView4);
