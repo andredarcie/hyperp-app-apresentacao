@@ -20,9 +20,9 @@ import static org.junit.Assert.*;
  *
  * @author admin
  */
-public class TrataApresentadorTest {
+public class TrataEspectadorTest {
     
-    public TrataApresentadorTest() {
+    public TrataEspectadorTest() {
     }
     
     @BeforeClass
@@ -42,11 +42,10 @@ public class TrataApresentadorTest {
     }
 
     /**
-     * Test of run method, of class TrataApresentador.
-     * Verifica se a conexao foi bem sucedida.
+     * Test of run method, of class TrataEspectador.
      */
     @Test
-    public void testRun() throws InterruptedException, IOException {
+    public void testRun() throws IOException {
         Servidor server = new Servidor();
         server.start();
         
@@ -56,8 +55,8 @@ public class TrataApresentadorTest {
             DataOutputStream out = new DataOutputStream(client.getOutputStream());
             DataInputStream in = new DataInputStream(client.getInputStream());
             
-            out.writeUTF("apresentador");
-            teste = client.isConnected() && in.readUTF().equals("autorizado");
+            out.writeUTF("espectador");
+            teste = client.isConnected();
             
             in.close();
             out.close();
@@ -69,9 +68,12 @@ public class TrataApresentadorTest {
         server.getServer().close();
         assertEquals(true, teste);
     }
-    
+
+    /**
+     * Test of enviarMensagem method, of class TrataEspectador.
+     */
     @Test
-    public void testSolicitacoes() throws IOException {
+    public void testEnviarMensagem() throws Exception {
         Servidor server = new Servidor();
         server.start();
         
@@ -81,14 +83,13 @@ public class TrataApresentadorTest {
             DataOutputStream out = new DataOutputStream(client.getOutputStream());
             DataInputStream in = new DataInputStream(client.getInputStream());
             
-            out.writeUTF("apresentador");
+            out.writeUTF("espectador");
+            
+            Servidor.replicarMensagemEspectador("mensagem teste");
             
             //parte nova a ser testada
             try { 
-                out.writeUTF("play");
-                out.writeUTF("pause");
-                out.writeUTF("next");
-                out.writeUTF("back");
+                server.listaEspectador.get(0).enviarMensagem("mensagem teste");
                 
                 teste = true;
             } catch (Exception e){
@@ -106,5 +107,5 @@ public class TrataApresentadorTest {
         server.getServer().close();
         assertEquals(true, teste);
     }
-
+    
 }

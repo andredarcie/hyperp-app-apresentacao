@@ -70,7 +70,7 @@ public class ServidorTest {
         //tempo pra uma possivel sincronia com a thread Servidor
         //Thread.sleep(1000);
         
-        boolean testar = false;
+        boolean teste = false;
         try{
             Socket client = new Socket("localhost", 9000);
             DataOutputStream out = new DataOutputStream(client.getOutputStream());
@@ -80,7 +80,7 @@ public class ServidorTest {
             //tempo pra uma possivel sincronia com a thread Servidor
             Thread.sleep(1000);
             
-            testar = server.getApresentadorConectado();
+            teste = server.getApresentadorConectado();
             
             out.close();
             client.close();
@@ -89,7 +89,7 @@ public class ServidorTest {
         }
         
         server.getServer().close();
-        assertEquals(true, testar);
+        assertEquals(true, teste);
     }
     
     /**
@@ -137,7 +137,36 @@ public class ServidorTest {
      */
     @Test
     public void testReplicarMensagemEspectador() throws Exception {
-        //
+        Servidor server = new Servidor();
+        server.start();
+        
+        boolean teste = false;
+        try{
+            Socket client = new Socket("localhost", 9000);
+            DataOutputStream out = new DataOutputStream(client.getOutputStream());
+            DataInputStream in = new DataInputStream(client.getInputStream());
+            
+            out.writeUTF("espectador");
+            
+            //parte nova a ser testada
+            try { 
+                Servidor.replicarMensagemEspectador("mensagem teste");
+                
+                teste = true;
+            } catch (Exception e){
+                teste = false;
+            }
+            //
+            
+            in.close();
+            out.close();
+            client.close();
+        } catch(IOException e){
+            //
+        }
+        
+        server.getServer().close();
+        assertEquals(true, teste);
     }
 
     /**
