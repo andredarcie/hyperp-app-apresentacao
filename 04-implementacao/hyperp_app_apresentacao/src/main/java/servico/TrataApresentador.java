@@ -35,13 +35,6 @@ public class TrataApresentador extends Thread{
 
             Controlador.proximo();
 
-            String conteudo = in.readUTF();
-            Log.addLog("Servidor: conteudo recebido: " + conteudo);
-            String modulo = in.readUTF();
-            Log.addLog("Servidor: modulo recebido: " + modulo);
-
-            Controlador.proximo();
-
             while (true)
             {
                 solicitacao = in.readUTF();

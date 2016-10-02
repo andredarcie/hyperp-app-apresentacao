@@ -74,7 +74,6 @@ public class ServidorTest {
         try{
             Socket client = new Socket("localhost", 9000);
             DataOutputStream out = new DataOutputStream(client.getOutputStream());
-            DataInputStream in = new DataInputStream(client.getInputStream());
             
             out.writeUTF("apresentador");
             
@@ -118,8 +117,11 @@ public class ServidorTest {
             if(in2.readUTF().equals("recussado"))
                 teste = true;
 
+            in1.close();
             out1.close();
             client1.close();
+            
+            in2.close();
             out2.close();
             client2.close();
         } catch (IOException e){
