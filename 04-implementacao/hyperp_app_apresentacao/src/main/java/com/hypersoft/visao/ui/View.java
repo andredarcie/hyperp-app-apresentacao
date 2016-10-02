@@ -63,7 +63,8 @@ public class View extends Application {
         screenHeight = primaryScreenBounds.getHeight();
 
         // Inicia o servidor socket
-        Servidor.iniciarServidor();
+        //Servidor servidor = new Servidor();
+        //servidor.start();
         
         // Carrega todos os recursos que vão ser usados na apresentação
         Controlador.carregarMidias();
