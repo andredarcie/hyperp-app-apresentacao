@@ -1,0 +1,33 @@
+# HyperPresentation #
+
+### Sobre o projeto - Apresentação ###
+
+* HyperP app Apresentação faz parte do Hyper P, plataforma de apresentação de áudio, vídeos, textos e imagens com
+  interação do apresentador e público.
++ HyperP app Apresentação é dividido em duas partes:
+    * O **servidor** é responsável por gerenciar as conexões dos dispositivos clientes, tanto apresentadores quanto espectadores.
+    * A **apresentação** é responsável por exibir o conteúdo  de audio, vídeo e imagem.
+- versão: 0.1
+
+### Autores ###
+André N. Darcie - Alexandre Benevides - Ederson Carmo - José Carlos Joanelli
+
+### Agradecimentos ###
+Este projeto inicialmente teve como objetivo a implementação de recursos de hipermídia para a disciplina de Sistemas Multimídia e Hipermídia.
+Ministrado pelo Prof. Dr. João Benedito dos Santos Junior - PUC Minas - Campus de Poços de Caldas.
+Agradecemos aos professores: M. Sc. Will Machado, M. Sc. Luiz Alberto Ferreira Gomes, por possibilitar a melhoria e utilização do projeto em suas respectivas disciplinas.
+
+### Como faço para configurar? ###
+* Esse projeto depende do Java instalado no computador juntamente com os arquivos
+de execução que podem ser encontrados em: [download](https://drive.google.com/drive/folders/0B3oPhzMLgVFZbVg3eUpyNnh5VnM?usp=sharing)
+* Após do download dos arquivos necessários coloque a pasta principal em *C:\SMH*
++ Dependências:
+    * Java SE versão 8
+    * Java FX versão 8
+    * IDE: NetBeans versão 8.1 
+    * Download [aqui](https://netbeans.org/downloads/)
+
+
+### Licença ###
+O sistema HyperP é de inteira responsabilidade da HyperSoft, é vetado qualquer tipo de cópia ou reprodução para fim de distribuição sem o licenciamento devido.
+A comercialização de licenças é feita única e exclusivamente no site www.hyperp.com.br.
