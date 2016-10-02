@@ -30,7 +30,7 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
     * Download [aqui](https://netbeans.org/downloads/)
 
 ### The core team ###
-[André N. Darcie](https://github.com/AndreNDarcie) - [Alexandre Benevides](https://github.com/alexandrebenevides) - [Ederson](https://github.com/Edersonk9)
+[André N. Darcie](https://github.com/AndreNDarcie) - [Alexandre Benevides](https://github.com/alexandrebenevides) - [Ederson](https://github.com/Edersonk9) - Jose
 
 ### Kanban no Trello ###
 https://trello.com/b/WQ8XVkqK/hiper-p (Apenas para membros)
