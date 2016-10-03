@@ -37,7 +37,7 @@ public class Controlador {
     private static int midiaPrincipalAtual = 0;
     private static int midiaSecundariaAtual = 0;
 
-    //private static String urlPadrao = "file:///C:/SMH/";
+    private static String urlPadrao = "file:///C:/SMH/";
     
     private static boolean leituraArquivo = false;
     
