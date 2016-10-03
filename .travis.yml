@@ -9,11 +9,13 @@ before_script: cd 04-implementacao/hyperp_app_apresentacao
 script: mvn cobertura:cobertura
 after_success:
 - bash <(curl -s https://codecov.io/bash)
-after_script: ls
+after_script:
+- cd /home/travis/build/AndreNDarcie/hyperp-app-apresentacao/04-implementacao/hyperp_app_apresentacao/target
+- ls
 deploy:
   provider: releases
   api_key:
     secure: K9zCfDXuDDVwvrjXQ3xr7Dauqygo6ppX6E3VR6vbRgl9+KM9dwQhIbw1w9OWLgdjsld+8A8bP2Yfje1sKYv7Gb571wxMhTTuA+zQnP0lV/OKgow6EWfOzhK+4NMp32Tvli7zzCyWJ5ptoKHahrnqrv1llwAuDeTIovvJbom73unbQNJgm+UFrcKdvJLFBhp29vyXt2bwDhsoJFCqBEoXznKRVWMUQ18sKbzQ21bA1zwTo20BDMDh+FjNfEPMhHeUM9dwOmrFe8L5anit7CzIG5EucnxqLnMiDtvAyewHsACOGtBAag+eQbq262w0IGJcdRinBZBf6jtL211xLzNOGCt6s/dymrp8G0u0zc3jx0JKwfJGdDaFJ3fGSWyP72rXB09vXk9MgDT3dlfWzhEySpXtMRvr1fDlH5OPJ0onoYhxLkCcvtVmzV6zUk9smvaDSodHXKgbN/EBlAjLNPCggzQ/eGzxtm1JQvT6KOY1xxB91FaOKwL9Mxg+oqPNggQK/oBURtWGpzlcOWEFWZtQtdHJ4yp/Mx+Z8JvkwaLil63nnHhIib/i8V4+E20g+eXOP8VzG5mPhx3ifF+y8LBjNwnM6jg/RIokd/rT5f27Etc1oBwUhaecmVhtb53D3hLJxp2Ww1MfdaUPnUSNU2oOtQOZeLSyVtZETU+emJtFaRM=
-  file: target/hyperp_app_apresentacao-1.0-SNAPSHOT.jar
+  file: /home/travis/build/AndreNDarcie/hyperp-app-apresentacao/04-implementacao/hyperp_app_apresentacao/target/hyperp_app_apresentacao-1.0-SNAPSHOT.jar
   on:
     repo: AndreNDarcie/hyperp-app-apresentacao
