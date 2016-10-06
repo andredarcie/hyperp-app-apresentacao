@@ -32,6 +32,10 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
 ### The core team ###
 [André N. Darcie](https://github.com/AndreNDarcie) - [Alexandre Benevides](https://github.com/alexandrebenevides) - [Ederson](https://github.com/Edersonk9) - [Jose](https://github.com/joanellijr)
 
+### Licença ###
+O sistema HyperP é de inteira responsabilidade da HyperSoft, é vetado qualquer tipo de cópia ou reprodução para fim de distribuição sem o licenciamento devido.
+A comercialização de licenças é feita única e exclusivamente no site www.hyperp.com.br.
+
 ### Kanban no Trello ###
 https://trello.com/b/WQ8XVkqK/hiper-p (Apenas para membros)
 
