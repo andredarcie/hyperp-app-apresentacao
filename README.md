@@ -16,7 +16,7 @@
 + HyperP app Apresentação é dividido em duas partes:
     * O **servidor** é responsável por gerenciar as conexões dos dispositivos clientes, tanto apresentadores quanto espectadores.
     * A **apresentação** é responsável por exibir o conteúdo  de audio, vídeo e imagem.
-- versão: 0.1
+- versão: 1.04
 
 ### Como faço para configurar? ###
 
