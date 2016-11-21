@@ -4,7 +4,7 @@
 [![codebeat badge](https://codebeat.co/badges/da565988-c975-4d58-bd81-4d65836ec71a)](https://codebeat.co/projects/github-com-andrendarcie-hyperp-app-apresentacao)
 
 ### Build Status no Travis-CI ###
-[![Build Status](https://travis-ci.org/andredarcie/hyperp-app-apresentacao.svg?branch=master)](https://travis-ci.org/AndreNDarcie/hyperp-app-apresentacao)
+[![Build Status](https://travis-ci.org/andredarcie/hyperp-app-apresentacao.svg?branch=master)](https://travis-ci.org/andredarcie/hyperp-app-apresentacao)
 
 ### Code coverage no Codecov ###
 [![codecov](https://codecov.io/gh/andredarcie/hyperp-app-apresentacao/branch/master/graph/badge.svg)](https://codecov.io/gh/andredarcie/hyperp-app-apresentacao)
