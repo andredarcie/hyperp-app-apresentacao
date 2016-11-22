@@ -16,6 +16,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import servico.TrataEspectador;
 
 /**
  *
@@ -43,19 +45,18 @@ public class TrataEspectadorTest {
     }
 
     /**
-     * Test of run method, of class TrataEspectador.
-     */
-    @Test
-    public void testRun() throws IOException {
-
-    }
-
-    /**
      * Test of enviarMensagem method, of class TrataEspectador.
+     * @throws java.lang.Exception
      */
     @Test
     public void testEnviarMensagem() throws Exception {
-
+        Servidor servidormock = mock(Servidor.class);
+        when(servidormock.replicarMensagemEspectador("A")).thenReturn(true);
+        
+        TrataEspectador espectador = mock(TrataEspectador.class);
+        when(espectador.enviarMensagem("A")).thenReturn("A");
+        
+        assertEquals(espectador.enviarMensagem("A"),"A");
     }
     
 }

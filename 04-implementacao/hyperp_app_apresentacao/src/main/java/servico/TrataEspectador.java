@@ -74,7 +74,7 @@ public class TrataEspectador extends Thread {
 
     }
     // Envia mensagem para todos clientes
-    public void enviarMensagem(String mensagem) throws InterruptedException {
+    public String enviarMensagem(String mensagem) throws InterruptedException {
         try {
             out.writeUTF(mensagem);
             out.flush();
@@ -84,6 +84,7 @@ public class TrataEspectador extends Thread {
         } catch (IOException ex) {
             System.out.println("Erro ao enviar mensagem para um espectador.");
         }
+        return mensagem;
     }
 
 }

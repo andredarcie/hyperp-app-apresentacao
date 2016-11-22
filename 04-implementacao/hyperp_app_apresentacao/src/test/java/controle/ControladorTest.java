@@ -5,8 +5,7 @@
  */
 package controle;
 
-import com.hypersoft.visao.ui.View;
-import dominio.NoMidia;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;

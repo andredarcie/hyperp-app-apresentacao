@@ -95,12 +95,14 @@ public class Servidor extends Thread {
 
     }
     
-    public void fecharServidor(){
+    public boolean fecharServidor(){
         try {
             this.server.close();
         } catch(IOException e){
             System.err.println("Erro ao fechar servidor");
+            return false;
         }
+        return true;
     }
     
     private boolean verificaApresentadorConectado(){
@@ -118,7 +120,7 @@ public class Servidor extends Thread {
         return this.apresentadorConectado;
     }
 
-    public static void replicarMensagemEspectador(String mensagem) throws InterruptedException {
+    public static boolean replicarMensagemEspectador(String mensagem) throws InterruptedException {
         
             System.out.println(listaEspectador.size());
             //synchronized (listaAlunos) {
@@ -133,7 +135,7 @@ public class Servidor extends Thread {
             }
             
         //}
-            
+           return true; 
     }
     
 }

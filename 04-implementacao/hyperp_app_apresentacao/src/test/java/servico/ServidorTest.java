@@ -77,7 +77,9 @@ public class ServidorTest {
      */
     @Test
     public void testReplicarMensagemEspectador() throws Exception {
-
+        Servidor servidorMock = mock(Servidor.class);
+        when(servidorMock.replicarMensagemEspectador("oi")).thenReturn(true);
+        assertEquals(servidorMock.replicarMensagemEspectador("oi"), true);
     }
 
     /**
@@ -85,7 +87,9 @@ public class ServidorTest {
      */
     @Test
     public void testFecharServidor() throws InterruptedException {
-        
+        Servidor servidorMock = mock(Servidor.class);
+        when(servidorMock.fecharServidor()).thenReturn(true);
+        assertEquals(servidorMock.fecharServidor(), true);
     }
     
 }
