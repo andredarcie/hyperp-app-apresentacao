@@ -19,6 +19,8 @@ import org.junit.Test;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import servico.TrataApresentador;
+
 
 /**
  *
@@ -63,7 +65,7 @@ public class ServidorTest {
     @Test
     public void testVerificaApresentadorConectado() throws Exception {
         Servidor servidorMock = mock(Servidor.class);
-        when(servidorMock.getApresentadorConectado()).thenReturn(true);
+        //when(servidorMock.getApresentadorConectado()).thenReturn(true);
         
         assertEquals(servidorMock.getApresentadorConectado(), true);
         verify(servidorMock).getApresentadorConectado();
@@ -74,7 +76,14 @@ public class ServidorTest {
      */
     @Test
     public void testBloqueioVariasConexoesDeApresentadores() throws Exception {
-
+        Servidor servidorMock = mock(Servidor.class);
+        //when(servidorMock.).thenReturn(true);
+        
+        TrataApresentador apresentadorMock = mock(TrataApresentador.class);
+        TrataApresentador apresentadorMock2 = mock(TrataApresentador.class);
+        
+        assertEquals(servidorMock.getApresentadorConectado(), true);
+        verify(servidorMock).getApresentadorConectado();
     }
 
     /**
