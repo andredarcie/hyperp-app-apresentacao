@@ -37,5 +37,5 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
 
 ### Licença ###
 O sistema HyperP é de inteira responsabilidade da HyperSoft, é vetado qualquer tipo de cópia ou reprodução para fim de distribuição sem o licenciamento devido.
-A comercialização de licenças é feita única e exclusivamente no site www.hyperp.com.br.
+A comercialização de licenças é feita única e exclusivamente no [site](www.hyperp.com.br).
 
