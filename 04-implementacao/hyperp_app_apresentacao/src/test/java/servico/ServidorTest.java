@@ -17,6 +17,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
@@ -61,7 +62,11 @@ public class ServidorTest {
      */
     @Test
     public void testVerificaApresentadorConectado() throws Exception {
+        Servidor servidorMock = mock(Servidor.class);
+        when(servidorMock.getApresentadorConectado()).thenReturn(true);
         
+        assertEquals(servidorMock.getApresentadorConectado(), true);
+        verify(servidorMock).getApresentadorConectado();
     }
     
     /**
