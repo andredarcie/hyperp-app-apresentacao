@@ -4,10 +4,10 @@
 [![codebeat badge](https://codebeat.co/badges/da565988-c975-4d58-bd81-4d65836ec71a)](https://codebeat.co/projects/github-com-andrendarcie-hyperp-app-apresentacao)
 
 ### Build Status no Travis-CI ###
-[![Build Status](https://travis-ci.org/AndreNDarcie/hyperp-app-apresentacao.svg?branch=master)](https://travis-ci.org/AndreNDarcie/hyperp-app-apresentacao)
+[![Build Status](https://travis-ci.org/andredarcie/hyperp-app-apresentacao.svg?branch=master)](https://travis-ci.org/andredarcie/hyperp-app-apresentacao)
 
 ### Code coverage no Codecov ###
-[![codecov](https://codecov.io/gh/AndreNDarcie/hyperp-app-apresentacao/branch/master/graph/badge.svg)](https://codecov.io/gh/AndreNDarcie/hyperp-app-apresentacao)
+[![codecov](https://codecov.io/gh/andredarcie/hyperp-app-apresentacao/branch/master/graph/badge.svg)](https://codecov.io/gh/andredarcie/hyperp-app-apresentacao)
 
 ### Sobre o projeto - Apresentação ###
 
@@ -33,7 +33,7 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
 [Aqui](https://trello.com/b/WQ8XVkqK/hiper-p) (Apenas para membros)
 
 ### The core team ###
-[André N. Darcie](https://github.com/AndreNDarcie) - [Alexandre Benevides](https://github.com/alexandrebenevides) - [Ederson](https://github.com/Edersonk9) - [Jose](https://github.com/joanellijr)
+[André N. Darcie](https://github.com/andredarcie) - [Alexandre Benevides](https://github.com/alexandrebenevides) - [Ederson](https://github.com/Edersonk9) - [Jose](https://github.com/joanellijr)
 
 ### Licença ###
 O sistema HyperP é de inteira responsabilidade da HyperSoft, é vetado qualquer tipo de cópia ou reprodução para fim de distribuição sem o licenciamento devido.

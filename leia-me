@@ -2,15 +2,17 @@
 
 ### Sobre o projeto - Apresentação ###
 
-* HyperP app Apresentação faz parte do Hyper P, plataforma de apresentação de áudio, vídeos, textos e imagens com
+* HyperP Apresentação faz parte do Hyper P, plataforma de apresentação de áudio, vídeos, textos e imagens com
   interação do apresentador e público.
-+ HyperP app Apresentação é dividido em duas partes:
++ HyperP Apresentação é dividido em duas partes:
     * O **servidor** é responsável por gerenciar as conexões dos dispositivos clientes, tanto apresentadores quanto espectadores.
     * A **apresentação** é responsável por exibir o conteúdo  de audio, vídeo e imagem.
 - versão: 0.1
++ HyperP App Apresentador é o aplicativo de controle da apresentação. Permite ao apresentador o controle da apresentação e retorno de dados do sistema.
++ HyperP App Público é o aplicativo de conexão do público com a apresentação. possibilita o registro do usuário e a recepção de dados da apresentação para interação.
 
 ### Autores ###
-André N. Darcie - Alexandre Benevides - Ederson Carmo - José Carlos Joanelli
+André N. Darcie - Alexandre Benevides - Éderson Carmo - José Carlos Joanelli
 
 ### Agradecimentos ###
 Este projeto inicialmente teve como objetivo a implementação de recursos de hipermídia para a disciplina de Sistemas Multimídia e Hipermídia.
