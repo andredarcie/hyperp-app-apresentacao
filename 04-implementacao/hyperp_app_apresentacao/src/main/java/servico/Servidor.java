@@ -36,7 +36,7 @@ public class Servidor extends Thread {
         iniciarServidor();
     }
     
-    private void iniciarServidor() {
+    public boolean iniciarServidor() {
         boolean executando = true;
 
         try {
@@ -90,6 +90,8 @@ public class Servidor extends Thread {
             System.out.println("Servidor: erro ao iniciar servidor.");
             e.printStackTrace();
         }
+        
+        return true;
 
     }
     
