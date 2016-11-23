@@ -28,6 +28,9 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
     * Java FX versão 8
     * IDE: NetBeans versão 8.1 
     * Download [aqui](https://netbeans.org/downloads/)
+    
+### Wiki ###
+[Aqui](https://github.com/andredarcie/hyperp-app-apresentacao/wiki)
 
 ### Kanban no Trello ###
 [Aqui](https://trello.com/b/WQ8XVkqK/hiper-p) (Apenas para membros)
