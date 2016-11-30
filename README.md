@@ -28,7 +28,11 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
     * Java FX versão 8
     * IDE: NetBeans versão 8.1 
     * Download [aqui](https://netbeans.org/downloads/)
-    
+
+### Instalação ###
+
+[Aqui](https://github.com/andredarcie/hyperp-app-apresentacao/wiki/Instala%C3%A7%C3%A3o)
+
 ### Wiki ###
 [Aqui](https://github.com/andredarcie/hyperp-app-apresentacao/wiki)
 
