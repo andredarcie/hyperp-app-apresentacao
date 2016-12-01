@@ -36,7 +36,7 @@ de execução que podem ser encontrados em: [download](https://drive.google.com/
 ### Wiki ###
 [Aqui](https://github.com/andredarcie/hyperp-app-apresentacao/wiki)
 
-### Kanban no Trello ###
+### Trello ###
 [Aqui](https://trello.com/b/WQ8XVkqK/hiper-p) (Apenas para membros)
 
 ### The core team ###
